@@ -1,0 +1,86 @@
+# Configuration file for KeyVault Expiration Monitoring
+# Edit these values to customize the monitoring behavior
+
+# Authentication Settings
+authentication:
+  clientId: "<CLIENT-ID>"
+  tenantId: "<TENANT-ID>"
+  clientSecret: "<CLIENT-SECRET>"
+
+# Test Mode Configuration
+testMode:
+  enabled: true
+  testRecipients:
+    - "admin@example.com"
+    - "manager@example.com"
+    - "devops@example.com"
+
+# Owner Assignment Rules
+ownerOverrides:
+  prefixes:
+    webapp: "webapp-team@example.com"
+    api: "api-team@example.com"
+    database: "dba-team@example.com"
+    microservice: "microservices-team@example.com"
+    frontend: "frontend-team@example.com"
+    security: "security-team@example.com"
+  keywords:
+    salesforce: "sales-team@example.com"
+    database: "dba-team@example.com"
+    api: "api-team@example.com"
+  defaultOwner: "default-owner@example.com"
+
+# Escalation Settings
+escalation:
+  tier1Days: 30  # Owner only
+  tier2Days: 15  # Owner + Managers
+  tier3Days: 7   # Owner + Managers + DevOps
+  alertBeforeDays: 60
+
+# Email Configuration
+email:
+  fromAddress: "AzureAlerts@example.com"
+  smtpServer: "mail.example.com"
+  managerEmails:
+    - "manager1@example.com"
+    - "manager2@example.com"
+    - "teamlead@example.com"
+  devopsTeam:
+    - "devops-team@example.com"
+    - "infrastructure@example.com"
+    - "security@example.com"
+  internalRecipients:
+    - "admin@example.com"
+    - "security-team@example.com"
+    - "operations@example.com"
+
+# Key Vaults to Monitor
+keyVaults:
+  webApplications:
+    - "kv-webapp-dev01"
+    - "kv-webapp-staging01" 
+    - "kv-webapp-prod01"
+  apiServices:
+    - "kv-api-dev01"
+    - "kv-api-staging01"
+    - "kv-api-prod01"
+  databases:
+    - "kv-database-dev01"
+    - "kv-database-prod01"
+  microservices:
+    - "kv-microservice-a-dev"
+    - "kv-microservice-a-prod"
+    - "kv-microservice-b-dev"
+    - "kv-microservice-b-prod"
+  frontend:
+    - "kv-frontend-dev01"
+    - "kv-frontend-prod01"
+  shared:
+    - "kv-shared-services01"
+    - "kv-integration-dev01"
+    - "kv-integration-prod01"
+    - "kv-monitoring-shared"
+    - "kv-backup-services01"
+  security:
+    - "kv-security-dev01"
+    - "kv-security-prod01"

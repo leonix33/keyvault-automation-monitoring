@@ -1,0 +1,40 @@
+# Credentials and sensitive information
+*.secret
+*.key
+appsettings.json
+appsettings.*.json
+
+# Configuration files with sensitive data
+config/production-config.yaml
+config/secrets.yaml
+
+# Log files
+*.log
+logs/
+*.transcript
+
+# PowerShell specific
+*.ps1xml
+
+# Backup files
+*.backup
+*.bak
+
+# IDE and editor files
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Documentation builds
+docs/_build/
+site/
