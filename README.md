@@ -2,7 +2,7 @@
 
 A comprehensive Azure KeyVault monitoring and automation toolkit for managing certificate, key, and secret expiration notifications.
 
-## 🚀 Features
+##  Features
 
 - **Automated Expiration Monitoring**: Scans multiple KeyVaults for expiring certificates, keys, and secrets
 - **Tiered Alert System**: 3-tier escalation (30/15/7 days) with appropriate stakeholder notifications  
@@ -67,13 +67,13 @@ $VaultNames = @(
 )
 ```
 
-## 🎯 Alert Tiers
+##  Alert Tiers
 
 - **Tier 1 (30 days)**: Owner notification only
 - **Tier 2 (15 days)**: Owner + Management team
 - **Tier 3 (7 days)**: Owner + Management + DevOps team
 
-## 🔧 Usage
+##  Usage
 
 ### Test Mode (Recommended First)
 
@@ -103,7 +103,7 @@ Set up as a scheduled task or Azure Automation Runbook:
 - **Time**: Early morning hours
 - **Service Account**: With appropriate KeyVault permissions
 
-## 📊 Reports Generated
+##  Reports Generated
 
 ### Internal Summary Report
 - Expiring items across all vaults
@@ -116,7 +116,7 @@ Set up as a scheduled task or Azure Automation Runbook:
 - Escalated based on days remaining
 - HTML formatted with vault details
 
-## 🛡️ Security Considerations
+##  Security Considerations
 
 - **Read-Only**: Script performs no destructive operations
 - **Credential Management**: Use secure credential storage
@@ -146,7 +146,7 @@ Set up as a scheduled task or Azure Automation Runbook:
 # Email results via pipeline notifications
 ```
 
-## 📝 Customization
+##  Customization
 
 ### Owner Assignment Rules
 
@@ -175,7 +175,7 @@ function New-Table {
 }
 ```
 
-## 🚨 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -207,7 +207,7 @@ Start-Transcript -Path "C:\Logs\KeyVault-Monitor.log"
 
 MIT License - see LICENSE file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -215,7 +215,7 @@ MIT License - see LICENSE file for details.
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
+##  Support
 
 For issues and questions:
 - Create an issue in this repository
@@ -224,4 +224,4 @@ For issues and questions:
 
 ---
 
-**Azure KeyVault Automation** - Proactive certificate and secret management! 🔐
+**Azure KeyVault Automation** - Proactive certificate and secret management! 
